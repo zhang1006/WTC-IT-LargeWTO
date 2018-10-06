@@ -1,0 +1,247 @@
+body {
+    color: #383749;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: '微软雅黑', sans-serif;
+}
+.clear{clear: both;}
+/* 清除所有浮动 */
+a {   color: #383749;}
+a:hover, a:focus, a:active {    color: #383749;}
+a:focus {    outline: thin dotted;}
+/* outline 设置外边框样式 */
+a:hover, a:active {    outline: 0;    list-style: none;}
+.flex {    display: flex !important;}
+/* 设置为flex布局  !important提高优先级  */
+#top{    background: #fff;    width: 100%;}
+.Lt{float: left;}
+.Rt{float: right;}
+/*
+# top-bar-email
+--------------------------------*/
+.top-bar-email,.top-bar-phone {    padding: 7px 26px;}
+.top-bar-email .iconfont,.top-bar-phone .iconfont {	margin-right: 12px;	color: #19c880;	font-size: 20px;}
+.top-bar-phone p {    margin: 0;}
+/*
+ # top-bar-email
+ ------------------- */
+.top-bar-email {    padding-left: 16px;    border-right: 1px solid #ebebeb;    float: left;}
+.top-bar-phone{float: left;}
+.top-bar-phone a,.top-bar-email a{	color: #383749;    text-decoration: none;}
+/*
+ # top-bar-search
+ ------------------*/
+.top-bar-menu{float: right;}
+.top-bar-search{float: left;}
+.top-bar-search input[type="search"]{	width: 280px;	padding: 12px 26px;	border: 0;	line-height: 1;	background: #f3f3f3; color: #383749;}
+.top-bar-search input[type="search"]::placeholder{	color: #757686;	font-size: 14px;}
+/* ::placeholder 设置对象文字占位符的样式 */
+.top-bar-search input[type="search"]:focus {    outline: none;}
+/* :focus 选择获得焦点的输入字段，并设置其样式*/
+.top-bar-search button[type="submit"] {  width: 50px; height: 50px;  border: 0;  color: #fff;  background: #19c880; cursor: pointer;  outline: none;}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .top-bar-search input[type="search"] {
+        width: 240px;
+    }
+    /* 当屏幕宽度处于   小于等于1200px且大于等于992px  的时候 触发效果 */
+}
+@media screen and (max-width: 991px) {
+    .top-bar-search,.top-bar-menu {  width: 100%;   text-align: center;  }
+    .Rt{width: 100%;}
+    .top-bar-search input[type="search"] {  width: calc(100% - 50px);    }
+    /* 当屏幕宽度处于   小于等于991px  的时候 触发效果 */
+}
+/*
+# top-bar-menu
+--------------------------------*/
+.top-bar-menu ul {    padding: 0 16px 0 32px;    margin: 5px 0px 0px 0px;    list-style: none;}
+.top-bar-menu li a {    position: relative;    display: block;    padding: 0 6px;    color: #383749;}
+.top-bar-menu li a::after{	position: absolute;	top: 50%;	right: -3px;    width: 6px;    margin-top: -12px;}
+.top-bar-menu li:nth-last-of-type(1) a::after {    display: none;}
+/* 选择器匹配属于父元素的特定类型的第1个子元素的每个元素，从最后一个子元素开始计数 */
+/*
+ #  navbar
+ ---------------------*/
+.header-nav{	background: rgba(21,20,33,0.3); }
+#top1{	height: 92px;	padding:20px 0;}
+#top1 .navbar{	margin: auto;}
+.navbar-inverse{	background: rgba(0,0,0,0);}
+.navbar-brand{	font-size: 36px;	font-weight: 500;	text-align: left !important!;}
+.navbar-brand span{	color: #19C880;}
+.navbar-nav li.index a{	color: #19C880;}
+#mynavbar ul li a:hover{	background: none;	color: #19C880;}
+#mynavbar ul li a:focus{	border-color: rgba(0,0,0,0);	background: none;	color: #19C880;}
+#mynavbar ul li a:visited{	border-color: rgba(0,0,0,0);}
+.navbar-nav li a{	color: #fff;	border-color: rgba(0,0,0,0);	padding:12px 30px;}
+.banner{	height: 820px;	background: url("../img/hero-bg.jpg") no-repeat center;	background-size: cover;}
+/*	background-size: cover;  把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。 */
+#banner-img{	background: rgba(21,20,33,0.5);	width: 100%;	height: 678px;	padding-top: 130px;}
+/*
+  # panel-title
+ -----------------------*/
+#banner-img .panel{	margin: 0 auto;	padding: 0;	border: none;	background: none;	width: 60%;}
+#banner-img .panel-heading{	margin-bottom: 8px;	padding: 0;	border: none;}
+#banner-img .panel-title h4{    font-size: 13px;   font-weight: 700;    text-transform: uppercase;    color: #19c880;    letter-spacing: 0.1em;    margin: 0px 0px 8px 0px;}
+/* 	text-transform  转换不同元素中的文本	uppercase  定义仅有大写字母。 
+ 	letter-spacing: 0.1em 设置 h1 和 h2 元素的字母间距为0.1em  */
+#banner-img .panel-body{	padding: 0;}
+#banner-img .panel-body h1{    margin: 12px 0px 8px 0px;    font-size: 45px;    font-weight: 500;    text-transform: uppercase;    color: #fff;}
+/* 	text-transform  转换不同元素中的文本	uppercase  定义仅有大写字母。 */
+#banner-img .panel-footer{	background: none;	margin: 0;	padding: 0;border: none;}
+#banner-img .panel-footer p{	margin-top: 8px;	color: #fff;	font-size: 14px;}
+#banner-img .more{	margin-top: 40px;}
+#banner-img .more a{    padding: 12px 40px;    border: 2px solid #19c880;    font-size: 11px;    font-weight: bold;    color: #fff;    text-transform: uppercase;    letter-spacing: 0.1em;   text-decoration: none;}
+#banner-img .more a:hover{	background: #19C880;}
+/*
+  # iconboxes
+ -----------------------*/
+.iconboxes{    border-bottom: 1px solid #ebebeb; }
+.iconboxes .container{ 	width: 100%; 	padding: 0;    margin-right: auto;    margin-left: auto; }
+.iconboxes .container .col-md-3{ 	padding: 0; }
+.iconboxes .container .panel{ 	margin: 0;    padding: 50px 60px 50px;    border-right: 1px solid #ebebeb;     }
+.iconboxes .icon i{    font-size: 42px;    color: #19c880;}
+.iconboxes .panel-heading{	margin: 12px 0 8px 0;    font-size: 22px;    font-weight: bold;}
+.iconboxes .panel-body{	margin: 12px 0 8px 0;	padding: 0;}
+.iconboxes .panel-footer{	padding: 10px 15px;   background: none;    border: none;}
+.iconboxes .panel-footer a{    padding-right: 10px;    font-size: 13px;    font-weight: 700;    color: #19c880;    text-decoration: none;    text-transform: uppercase;    letter-spacing: 0.1em;}
+/* 	text-transform  转换不同元素中的文本	uppercase  定义仅有大写字母。 
+ 	letter-spacing: 0.1em 设置 h1 和 h2 元素的字母间距为0.1em  */
+/*
+  # courses
+ -------------------*/
+.courses{	padding: 100px 0;}
+.courses .container{	width: 80%;}
+.courses header h2{	margin: 0;    font-size: 42px;    font-weight: 400;    float: left;}
+.courses header a.btn{	float: right;	padding: 16px 48px;    border: 2px solid #34d986;    border-radius: 0;    font-size: 13px;    font-weight: bold;    line-height: 1;    text-transform: uppercase;  letter-spacing: 0.1em;    color: #383749;    text-decoration: none;}
+.courses header a.btn:hover{	background: #19C880;	color: #fff;}
+.courses .row .media .media-object{	width:100%;}
+.courses .row .media .media-left{float: left;padding-right: 40px;}
+.courses .media{	margin-top: 40px;} 
+.courses .media:hover{	box-shadow: 0px 20px 100px 10px #EEE;} 
+.courses .media .media-body span{	font-size: 14px;	color: #868686;}
+.courses .media .media-body{	padding-left: 30px;	border: 1px #ebebeb solid;	border-left: 0;	}
+.courses .media .media-body .media-heading .author{	font-size: 18px;	color: #757686;}
+.courses .media .media-body .media-heading .author a{	text-decoration: none;	color: #19C880;	font-style: italic;}
+/*	font-style: italic; 浏览器会显示一个斜体的字体样式  */
+.courses .media .media-body .media-heading .price{	padding-top: 20px;	font-size: 28px;	font-weight: 700;	color: #19C880;}
+.courses .media .media-body .media-heading .price-free{	font-size: 28px;	font-weight: 700;	color: #f3a90b;}
+.courses .media .media-body .media-heading .price-drop{	font-size: 28px;	font-weight: 700;	color: #c0c1cd;	text-decoration: line-through;	margin-left: 10px;}
+/*  text-decoration: line-through 定义穿过文本下的一条线。*/
+/*
+ # news
+ ---------------- */
+.news{	padding: 100px 0;}
+@media (min-width: 1200px)
+	.news .container {
+    	max-width: 1140px;
+}
+@media (min-width: 992px)
+	.news .container {
+	    max-width: 960px;
+}
+@media (min-width: 768px)
+	.news .container {
+	    max-width: 720px;
+}
+@media (min-width: 576px)
+	.news .container {
+	    max-width: 540px;
+}
+.news .container header h2 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.news .container .col-12 header{text-align: center;}
+.news .container .col-lg-6,.news .container .panel,.news .container .panel .panel-heading,.news .container .panel .panel-body{	padding: 0;    border: 0;}	
+.news .container .panel .panel-heading img{	width: 100%;}
+.news .container .panel .panel-body {	width: 100%;	margin-top: 32px;	font-size: 34px;	font-weight: 400;}
+.news .container .panel .panel-body a{	color: #757686;}
+.news .container .panel .panel-body a:hover{	color: #383749;}
+.news .container .panel .panel-footer{	padding: 10px 15px 10px 0;    background: none;    border: none;    color: #C0C1CD;}
+.news .container .media{	padding-left: 30px;	margin-bottom: 30px;}
+.news .container .media .media-body{	padding-left: 20px;}
+.news .container .media .media-body span{	font-size: 16px;    color: #C0C1CD;}
+.news .container .media .media-body h3{	font-size: 20px;    color: #383749;    cursor: pointer;}
+/* cursor: pointer; 让光标变成一只手形状*/
+.news .container .media .media-body h3:hover{	text-decoration: underline;}
+.news .container .media .media-body .media-heading .author{	margin-top: 14px;	font-size: 16px;	color: #757686;}
+.news .container .media .media-body .media-heading .author a{	text-decoration: none;	color: #19C880;	font-style: italic;}
+.news .container .media .media-body .media-heading .content{	margin-top: 12px;	color: #757686;}
+/*
+  # clients-logo
+ -----------------*/
+.clients-logo{	margin-top: 100px;	background: #f7f7f7;	padding: 16px 0;}
+.clients-logo .container .row .col-12{	display: flex;     align-items: center;    justify-content: space-between;}
+.clients-logo .container .row .logo-wrap{	margin: 16px;}
+/*
+  #   site-footer
+-----------------*/
+.footer-widgets{	color: #757686;	padding: 60px 0;}
+.footer-widgets .foot-about{	padding-top: 20px;}
+.footer-widgets .foot-about p{	margin-top: 40px;	font-size: 16px;	line-height: 1.6;	color: #757686;}
+.footer-widgets h2{	margin-bottom: 40px;	font-size: 20px;	font-weight: bold;	color: #383749;}
+.footer-widgets ul{	padding: 0;	margin: 0;	list-style: none;	float: left;}
+.footer-widgets ul.left{	padding-right: 30px;}
+.footer-widgets  ul li{		margin-bottom: 12px;}
+.footer-widgets  ul li a{	color: #757686;	text-decoration: none;}
+.footer-widgets  ul li a:hover{	color: #19C880;	text-decoration: none;}
+.footer-widgets i{	cursor: pointer;	font-size: 40px;}
+
+/*
+ 	二级页面-ABOUT
+ ----------------*/
+.about-banner {	height: 340px;    background: url(../img/courses-header.jpg) no-repeat center;    background-size: cover !important;}
+/*	background-size: cover;  把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。 */
+#banner-img h1{	color: #fff;}
+/*
+  #  about
+ -------------*/
+.about{	padding-top: 90px;	padding-bottom: 100px;}
+.about .container .title h1{	padding-bottom: 20px;}
+.about .container p,.about .contianer span{	color: #757686;}
+.about .container .version{	padding-top: 30px;}
+.about .container .version ul{	padding-left: 10px;	color: #757686;	list-style: none;}
+.about .container .version ul li i{	padding-right: 20px;	color: #19C880;}
+/*
+  #  team
+ ----------------*/
+.team{	border-top: 1px solid #ebebeb;	padding: 100px 0;	}
+.team .container .title h1{ 		padding-bottom: 20px;}
+.team .container p,.team .contianer span{	color: #757686;}
+.team .container .team-member{	margin-top: 48px;	padding: 32px 40px;	border: 1px solid #EBEBEB;}
+.team .container .team-member .teacher{	text-align: center;}
+.team .container .team-member img{	width: 180px;    max-width: 100%;    border-radius: 50%;}
+/* max-width: 100%; 定义基于包含它的块级对象的百分比最大宽度。
+   border-radius: 50%; 向元素添加50%的圆角边框： */
+.team .container .team-member h4 {    font-size: 16px;    font-weight: 400;    color: #19c880;}
+.team .container .team-member ul{	margin: 0!important;	padding: 0!important;	margin-top: 24px !important;	list-style: none;	display: flex;	justify-content: center;	align-items: center;}
+/*  !important提高优先级 
+	justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。 center 居中对齐 
+	align-items: center; 居中对齐弹性盒的各项 <div> 元素：*/
+.team .container .team-member ul li{	margin: 0 10px;}
+.team .container .team-member ul li a{    border: 1px solid #ebebeb;    border-radius: 50%;     text-decoration: none;    padding: 12px 13px !important;    transition: all .35s;}
+/* transition: all .35s; 设置 .team .container .team-member ul li a所有的过渡时间为 0.35s */
+.team .container .team-member ul li a:hover{	background: #19C880;}
+.team .container .team-member ul li:hover a i{    color: #fff;}
+/* li:hover触发后，li下面 a里面的i标签变色*/
+.team .container .team-member i{    font-size: 18px;    color: #c0c1cd;}
+/*
+ # register 
+---------------*/
+.contact{	padding-bottom: 60px;	border-top: 1px solid #ebebeb;}
+.contact .form,.contact .info{	padding-top: 100px;}
+.contact .form{	padding-right: 40px;}
+.contact .container h1{	padding: 0px;	padding-bottom: 30px;}
+.contact form input::-webkit-input-placeholder,.contact form textarea::-webkit-input-placeholder{	color: #c3c1cd;}
+/*  ::-webkit-input-placeholder  更改input里的placeholder的样式*/
+.contact form input[type="text"]{	height: 52px;}
+.contact form input[type="text"],.contact form textarea {	width: 100%;    padding: 12px 20px;    margin-top: 18px;    border: 1px solid #ebebeb;    background: #f7f7f7;    color: #383749;    border-radius: 0px;}
+.contact input[type="submit"] {    padding: 16px 32px;    margin-top: 40px;    margin-bottom: 10px;    border: 0;    border-radius: 2px;    font-size: 13px;    font-weight: 600;    line-height: 1;	color: #fff;    text-transform: uppercase;    text-decoration: none;    letter-spacing: 0.1rem;    outline: none;    cursor: pointer;    background: #19c880;}
+.contact input[type="submit"]:hover {	background: #167950;}
+.contact .container .info{	padding-left: 40px;}
+.contact .container .info p{	margin-top: 24px;    line-height: 1.8;    color: #757686;}
+.contact .container .info ul{	list-style: none;	padding: 0px;	margin: 0px;}
+.contact .container .info li{    margin-top: 32px;    font-size: 24px;    color: #383749;}
+.contact .container .info li span{	display: block;    font-size: 18px;    color: #c0c1cd;}
